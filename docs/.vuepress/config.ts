@@ -15,7 +15,7 @@ import { plumeTheme } from 'vuepress-theme-plume'
 import collections from './collections'
 
 export default defineUserConfig({
-  base: '/blog',
+  base: '/',
   lang: 'zh-CN',
   title: 'My CLI',
   description: '',
