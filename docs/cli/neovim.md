@@ -10,16 +10,14 @@ permalink: /cli/u6kqsl6n/
 
 @tab glibc
 ```shell
-curl -fsSL \
-     https://ghproxy.cn/https:/raw.githubusercontent.com/free-150/scripts/refs/heads/main/nvim.sh \
-     | bash -s -- -m https://ghproxy.cn
+curl -fsSL https://ghproxy.cn/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-glibc.sh | bash
 ```
 
 
 @tab musl
 
 ```shell
-wget -O - https://raw.gitcode.com/guoweiwangluo/neovim/raw/main/install-alpine.sh | sh
+wget -O - https://ghproxy.cn/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-musl.sh | sh
 ```
 
 :::
