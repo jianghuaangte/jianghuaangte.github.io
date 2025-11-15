@@ -93,6 +93,7 @@ const cli = defineCollection({
         'vnt',
         'tmate',
         'jianguoyun',
+        'dufs',
       ],
     },
   ]

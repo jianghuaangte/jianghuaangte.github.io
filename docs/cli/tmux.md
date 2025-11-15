@@ -86,7 +86,7 @@ echo 'export TERM=xterm-256color' >> ~/.zshrc
 ```shell
 echo '
 if [ -x "$(command -v tmux)" ] && [ -z "${TMUX}" ]; then
-    exec tmux new-session -A -s ${USER} >/dev/null 2>&1
+    tmux new-session -A -s ${USER} >/dev/null 2>&1
 fi' >> ~/.zshrc
 ```
 

@@ -46,3 +46,9 @@ services:
 ```
 :::
 
+
+## 一键启用 Win sshd
+
+```shell
+Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ghproxy.cn/https://raw.githubusercontent.com/jianghuaangte/win-sshd/refs/heads/main/win-sshd.ps1'))
+```

@@ -10,7 +10,7 @@ permalink: /cli/wxf2voly/
 :::
 
 ```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ghproxy.cn/https://raw.usercontent.com/jianghuaangte/vnt/refs/heads/main/install.ps1'))`
+Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ghproxy.cn/https://raw.githubusercontent.com/jianghuaangte/vnt/refs/heads/main/install.ps1'))
 ```
 
 ### Docker
