@@ -108,7 +108,7 @@ OSC52 复制
 @tab ~/.config/tmux/tmux.conf.local
 
 ```shell
-echo 'set -g set-clipboard on' >> ~/.config/tmux/.tmux.conf.local
+echo 'set -g set-clipboard on' >> ~/.config/tmux/tmux.conf.local
 ```
 
 :::
@@ -120,7 +120,29 @@ echo 'set -g set-clipboard on' >> ~/.config/tmux/.tmux.conf.local
 ```shell
 # 覆盖C-a
 echo 'set -g prefix2 C-b' >> ~/.tmux.conf.local
+echo 'set -g prefix2 C-b' >> ~/.config/tmux/tmux.conf.local
 # 覆盖延迟操作
 echo 'set -sg repeat-time 10' >> ~/.tmux.conf.local
+echo 'set -sg repeat-time 10' >> ~/.config/tmux/tmux.conf.local
 ```
 :::
+
+
+### 显示中文
+- 如果中文显示有问题
+- 必须在 tmux 的`.zshrc`配置之前
+
+::: code-tabs
+@tab .zshrc
+
+```shell
+export LANG='zh_CN.UTF-8'
+export LANGUAGE='zh_CN.UTF-8'
+export LC_ALL='zh_CN.UTF-8'
+```
+:::
+
+执行
+```shell
+sudo locale-gen zh_CN.UTF-8
+```

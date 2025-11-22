@@ -32,7 +32,7 @@ local font_size = platform.is_mac and 16 or 9.75
 ### 默认 shell
 - 可以使用`which <shell>` 查看你的 shell 位置
 ::: code-tabs
-@tab ~/.config/wezterm/config/launch.lua
+@tab ~/.config/wezterm//config/domains.lua
 ```lua :collapsed-lines
 -- 这是设置 win
 if platform.is_win then
