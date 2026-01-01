@@ -31,8 +31,9 @@ local font_size = platform.is_mac and 16 or 9.75
 
 ### 默认 shell
 - 可以使用`which <shell>` 查看你的 shell 位置
+- 注意区别不同系统
 ::: code-tabs
-@tab ~/.config/wezterm//config/domains.lua
+@tab ~/.config/wezterm/config/launch.lua
 ```lua :collapsed-lines
 -- 这是设置 win
 if platform.is_win then
@@ -75,7 +76,7 @@ end
 - Mac 必须设置使用`标准按键`才能使用F3
 - 必须要有`multiplexing = 'None'`否则会走wezterm 自身的server 协议
 ::: code-tabs
-@tab ~/.config/wezterm/config/launch.lua
+@tab ~/.config/wezterm/config/domains.lua
 ```lua :collapsed-lines
 local platform = require('utils.platform')
 

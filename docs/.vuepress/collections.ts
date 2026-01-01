@@ -94,6 +94,14 @@ const cli = defineCollection({
         'tmate',
         'jianguoyun',
         'dufs',
+        'VPN',
+      ],
+    },
+    {
+      text: '常用',
+      collapsed: false,
+      items: [
+        'docker',
       ],
     },
   ]

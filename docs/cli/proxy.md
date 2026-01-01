@@ -7,6 +7,21 @@ permalink: /cli/qigic98q/
 ### 终端代理
 
 ::: code-tabs
+@tab *nix
+
+```shell
+# 代理
+export http_proxy=http://127.0.0.1:7890
+export https_proxy=$http_proxy
+export ALL_PROXY=socks5://localhost:7890
+
+# 取消
+unset http_proxy
+unset https_proxy
+unset no_proxy
+unset ALL_PROXY
+```
+
 @tab Win-cmd
 ```shell
 # 代理
@@ -33,18 +48,6 @@ Remove-Item Env:HTTPS_PROXY -ErrorAction Ignore
 Remove-Item Env:NO_PROXY -ErrorAction Ignore
 ```
 
-@tab *nix
-
-```shell
-# 代理
-export http_proxy=http://127.0.0.1:7890
-export https_proxy=$http_proxy
-
-# 取消
-unset http_proxy
-unset https_proxy
-unset no_proxy
-```
 
 :::
 
