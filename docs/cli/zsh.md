@@ -27,6 +27,8 @@ apk add zsh
 修改默认 shell 为`zsh`
 
 ```shell
+sudo chsh -s $(which zsh)
+# or
 chsh -s $(which zsh)
 ```
 

@@ -42,6 +42,23 @@ apk add tmux
 
 
 ### 安装
+**依赖安装**
+::: code-tabs#dependence
+
+@tab glibc
+
+```shell
+sudo apt install perl grep sed gawk -y
+
+```
+
+@tab musl
+```shell
+sudo apk add perl grep sed gawk ncurses-terminfo ncurses-terminfo-base
+```
+
+:::
+
 
 ```shell
 export OH_MY_TMUX_REPOSITORY="https://ghfast.top/https://github.com/gpakosz/.tmux.git"
@@ -109,6 +126,8 @@ OSC52 复制
 
 ```shell
 echo 'set -g set-clipboard on' >> ~/.config/tmux/tmux.conf.local
+# linuxserver/openssh-server
+echo 'set -g set-clipboard on' >> ~/.tmux.conf.local
 ```
 
 :::
@@ -119,11 +138,13 @@ echo 'set -g set-clipboard on' >> ~/.config/tmux/tmux.conf.local
 
 ```shell
 # 覆盖C-a
-echo 'set -g prefix2 C-b' >> ~/.tmux.conf.local
 echo 'set -g prefix2 C-b' >> ~/.config/tmux/tmux.conf.local
+# linuxserver/openssh-server
+echo 'set -g prefix2 C-b' >> ~/.tmux.conf.local
 # 覆盖延迟操作
-echo 'set -sg repeat-time 10' >> ~/.tmux.conf.local
 echo 'set -sg repeat-time 10' >> ~/.config/tmux/tmux.conf.local
+# linuxserver/openssh-server
+echo 'set -sg repeat-time 10' >> ~/.tmux.conf.local
 ```
 :::
 
