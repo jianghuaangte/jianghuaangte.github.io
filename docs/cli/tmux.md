@@ -49,7 +49,6 @@ apk add tmux
 
 ```shell
 sudo apt install perl grep sed gawk -y
-
 ```
 
 @tab musl
@@ -59,7 +58,7 @@ sudo apk add perl grep sed gawk ncurses-terminfo ncurses-terminfo-base
 
 :::
 
-
+**安装oh my tmux**
 ```shell
 export OH_MY_TMUX_REPOSITORY="https://ghfast.top/https://github.com/gpakosz/.tmux.git"
 curl -fsSL "https://ghfast.top/https://github.com/gpakosz/.tmux/raw/refs/heads/master/install.sh#$(date +%s)" | bash
@@ -67,6 +66,13 @@ curl -fsSL "https://ghfast.top/https://github.com/gpakosz/.tmux/raw/refs/heads/m
 
 
 ### 配置
+以下这些配置可以使用脚本一键配置  
+```shell
+curl -fsSL https://raw.githubusercontent.com/jianghuaangte/tmux-configs/refs/heads/main/tmux-conf-local.sh | sh
+# 登录时不自动运行tmux
+curl -fsSL https://raw.githubusercontent.com/jianghuaangte/tmux-configs/refs/heads/main/tmux-conf-local.sh | sh -s -- --no-autostart
+```
+
 vi 模式
 ::: code-tabs#ohmytmux
 
