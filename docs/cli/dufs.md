@@ -19,13 +19,13 @@ docker run -v `pwd`:/data -p 5000:5000 --rm -it sigoden/dufs /data -A
 ```yml
 version: '3'
 services:
-  dufs:
-    image: sigoden/dufs
+  dufs2:
+    image: docker.1ms.run/sigoden/dufs
     ports:
     - 5000:5000
     volumes:
     - .:/data
-    command: /data -A
+    command: --auth "admin:password@/:rw" -A /data
     restart: unless-stopped
 ```
 
