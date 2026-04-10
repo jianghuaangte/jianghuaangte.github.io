@@ -14,7 +14,7 @@ Win 必须以`管理员`权限运行
 ```shell
 # curl 方式
 curl -fsSL https://ghproxy.cn/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-glibc.sh | bash
-# wget 方式
+# wget 方式(可能触发反爬虫)
 wget -O - https://ghproxy.cn/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-glibc.sh | bash
 # 仅安装配置文件
 export nvim_install="no" && curl -fsSL https://ghproxy.cn/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-glibc.sh | bash
@@ -26,7 +26,7 @@ export nvim_install="no" && curl -fsSL https://ghproxy.cn/https://raw.githubuser
 ```shell
 # curl 方式
 curl -fsSL https://ghproxy.cn/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-musl.sh | sh
-# wget 方式
+# wget 方式(可能触发反爬虫)
 wget -qO- https://ghproxy.cn/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-musl-wget.sh | sh
 # 仅安装配置文件
 export nvim_install="no" && wget -qO- https://ghproxy.cn/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-musl-wget.sh | sh
