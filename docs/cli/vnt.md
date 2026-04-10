@@ -23,7 +23,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 
 @tab cli
 ```shell
-docker run --name vnt-cli --net=host --privileged --restart=always  -d lmq8267/vnt -k test123
+docker run --name vnt-cli --net=host --privileged --restart=always  -d lmq8267/vnt -k test123 -w password
 ```
 
 @tab compose
@@ -36,7 +36,7 @@ services:
     privileged: true
     network_mode: host
     container_name: vnt-cli
-    command: '-k test123'
+    command: '-k test123 -w password'
 ```
 
 :::
