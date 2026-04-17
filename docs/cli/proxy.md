@@ -52,7 +52,7 @@ Remove-Item Env:NO_PROXY -ErrorAction Ignore
 :::
 
 ---
-### Git 
+### Git HTTP(S) 代理
 ::: code-tabs
 @tab 代理
 设置代理
@@ -67,13 +67,23 @@ git config --global --unset https.proxy
 :::
 
 ---
-### SSH
+### Git SSH 代理
+nc 的方式不支持认证, ncat 支持
 ::: code-tabs
-@tab ~/.ssh/config
+`~/.ssh/config`
+@tab nc
 ```shell
 Host github.com
   HostName github.com
   User git
-  ProxyCommand nc -v -x 127.0.0.1:7890 %h %p
+  ProxyCommand nc -X 5 -x 127.0.0.1:7890 %h %p
+```
+
+@tab ncat
+```shell
+Host github.com
+  HostName github.com
+  User git
+  ProxyCommand ncat --proxy 127.0.0.1:7890 --proxy-type socks5 --proxy-auth user:pass %h %p
 ```
 :::
