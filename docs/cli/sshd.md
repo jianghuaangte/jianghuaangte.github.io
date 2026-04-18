@@ -20,9 +20,9 @@ services:
       - PUID=1000                   # 使用普通用户权限（不推荐使用0）
       - PGID=1000
       - TZ=Asia/Shanghai
-      - PASSWORD_ACCESS=true        # 使用密码登录sshd
-      - USER_NAME=ll                # 设定普通用户，不能为root
-      - USER_PASSWORD=123456        # 设定普通用户密码
+      - PASSWORD_ACCESS=true        # 使用密码登录普通用户，设为false的话只能使用PUBLIC_KEY公钥才能登录
+      - USER_NAME=ll                # 设定普通用户名，不能为root
+      - USER_PASSWORD=123456        # 设定普通用户密码。同时也是 Root 密码（无论PASSWORD_ACCESS是否为否），当同时设置PUBLIC_KEY时，PUBLIC_KEY优先
       - SUDO_ACCESS=true            # 使用 sudo 提权，未设置USER_PASSWORD，将允许无密码sudo访问
       - PUBLIC_KEY=yourpublickey    # 使用公钥连接更安全，请关闭密码登录PASSWORD_ACCESS=false
     ports:
