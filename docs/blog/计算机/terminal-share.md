@@ -24,6 +24,8 @@ permalink: /blog/ejwyatq3/
 方案思路：
 服务端tmux -> 服务端TTYD -> 服务端loophole -> VNT组网 -> 客户端网页访问  
 
+为什么要用loophole ，因为如果客户是在 openwrt 等设备中运行的 vnt，那作为宿主机的Windows是无法访问 10.26.0.x 的 ttyd 投屏
+
 **具体实现**
 - [loophole 网站发布](https://github.com/loophole/cli)
 - [VNT 组网](https://github.com/vnt-dev/vnt)
