@@ -11,7 +11,7 @@ permalink: /cli/wxf2voly/
 
 - 管理员权限运行
 ```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ghproxy.cn/https://raw.githubusercontent.com/jianghuaangte/vnt/refs/heads/main/install.ps1'))
+Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/vnt/refs/heads/main/install.ps1'))
 ```
 
 ### Docker

@@ -36,5 +36,16 @@ chsh -s $(which zsh)
 安装命令
 
 ```shell
-REMOTE=https://ghproxy.cn/https://github.com/ohmyzsh/ohmyzsh.git sh -c "$(curl -fsSL https://ghproxy.cn/https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+REMOTE=https://ghfast.top/https://github.com/ohmyzsh/ohmyzsh.git sh -c "$(curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+## 添加普通用户
+```shell
+apt install sudo
+# 创建用户并加入 sudo 组
+useradd -m -s /bin/bash -G sudo myuser
+# 设置密码
+passwd myuser
+# 关闭使用 root 密码登录ssh
+nvim /etc/ssh/sshd_confg
 ```

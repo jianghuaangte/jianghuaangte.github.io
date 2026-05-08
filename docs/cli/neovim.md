@@ -13,11 +13,11 @@ Win 必须以`管理员`权限运行
 @tab glibc
 ```shell
 # curl 方式
-curl -fsSL https://ghproxy.cn/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-glibc.sh | bash
+curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-glibc.sh | bash
 # wget 方式(可能触发反爬虫)
-wget -O - https://ghproxy.cn/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-glibc.sh | bash
+wget -O - https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-glibc.sh | bash
 # 仅安装配置文件
-export nvim_install="no" && curl -fsSL https://ghproxy.cn/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-glibc.sh | bash
+export nvim_install="no" && curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-glibc.sh | bash
 ```
 
 
@@ -25,18 +25,18 @@ export nvim_install="no" && curl -fsSL https://ghproxy.cn/https://raw.githubuser
 
 ```shell
 # curl 方式
-curl -fsSL https://ghproxy.cn/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-musl.sh | sh
+curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-musl.sh | sh
 # wget 方式(可能触发反爬虫)
-wget -qO- https://ghproxy.cn/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-musl-wget.sh | sh
+wget -qO- https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-musl-wget.sh | sh
 # 仅安装配置文件
-export nvim_install="no" && wget -qO- https://ghproxy.cn/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-musl-wget.sh | sh
+export nvim_install="no" && wget -qO- https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-musl-wget.sh | sh
 ```
 
 @tab win
 
 ```powershell
-$env:GH_PROXY = "https://ghproxy.cn/"
-Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ghproxy.cn/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-win.ps1'))
+$env:GH_PROXY = "https://ghfast.top/"
+Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-win.ps1'))
 ```
 
 :::
@@ -50,7 +50,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 @tab win
 
 ```powershell
-$env:GH_PROXY = "https://ghproxy.cn/"
+$env:GH_PROXY = "https://ghfast.top/"
 Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/jianghuaangte/nilesoft-shell-neovim/refs/heads/main/nilesoft-shell-neovim.ps1'))
 ```
 
