@@ -136,3 +136,8 @@ sh scripts.sh <账号> -u 本地文件
 PS  
 - 下载默认放在当前目录
 - 上传可以指定路径，下载只需要指定文件名（删除同理）
+
+## WebDAV
+```shell
+curl -u "user:passwd" -T "/path/to/localfile" "http(s)://ip:port/dav/file"
+```
