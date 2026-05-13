@@ -10,7 +10,7 @@ permalink: /cli/shsfkhcc/
 [官网](https://wezterm.org/)
 |[Github](https://bgithub.xyz/wezterm/wezterm/releases)
 
-### 配置文件
+### [配置文件](https://ghfast.top/https://github.com/KevinSilvester/wezterm-config/archive/refs/heads/master.zip)
 - 提供类似于 oh my wezterm 的配置
 
 ```shell
