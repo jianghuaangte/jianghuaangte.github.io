@@ -51,7 +51,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 
 ```powershell
 $env:GH_PROXY = "https://ghfast.top/"
-Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/jianghuaangte/nilesoft-shell-neovim/refs/heads/main/nilesoft-shell-neovim.ps1'))
+Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/nilesoft-shell-neovim/refs/heads/main/nilesoft-shell-neovim.ps1'))
 ```
 
 :::

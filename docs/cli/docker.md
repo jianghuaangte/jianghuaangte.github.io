@@ -13,7 +13,7 @@ sudo DOWNLOAD_URL=https://mirrors.ustc.edu.cn/docker-ce sh get-docker.sh
 
 @tab Github 源
 ```shell
-curl -fsSL https://raw.githubusercontent.com/docker/docker-install/master/install.sh -o get-docker.sh
+curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/docker/docker-install/master/install.sh -o get-docker.sh
 sh get-docker.sh
 ```
 :::

@@ -68,9 +68,9 @@ curl -fsSL "https://ghfast.top/https://github.com/gpakosz/.tmux/raw/refs/heads/m
 ### 配置
 以下这些配置可以使用脚本一键配置  
 ```shell
-curl -fsSL https://raw.githubusercontent.com/jianghuaangte/tmux-configs/refs/heads/main/tmux-conf-local.sh | sh
+curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/tmux-configs/refs/heads/main/tmux-conf-local.sh | sh
 # 登录时不自动运行tmux
-curl -fsSL https://raw.githubusercontent.com/jianghuaangte/tmux-configs/refs/heads/main/tmux-conf-local.sh | sh -s -- --no-autostart
+curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/tmux-configs/refs/heads/main/tmux-conf-local.sh | sh -s -- --no-autostart
 ```
 
 vi 模式
