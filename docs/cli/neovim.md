@@ -5,7 +5,7 @@ permalink: /cli/u6kqsl6n/
 ---
 ## Neovim 安装
 详细文档请阅读[Github](https://github.com/jianghuaangte/Neovim)  
-Win 必须以`管理员`权限运行
+Win 必须以`管理员`权限运行、关闭杀毒
 
 
 ::: code-tabs#neovim
@@ -43,7 +43,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 
 
 ## Neovim 右键编辑
-- 配置 Neovim 安装脚本使用
+- 前提使用上一节 Neovim 安装脚本(win)使用  
+- Win 必须以`管理员`权限运行、关闭杀毒
 
 ::: code-tabs#neovim
 
