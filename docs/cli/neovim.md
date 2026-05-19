@@ -28,7 +28,7 @@ export nvim_install="no" && curl -fsSL https://ghfast.top/https://raw.githubuser
 curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-musl.sh | sh
 # wget 方式(可能触发反爬虫)
 wget -qO- https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-musl-wget.sh | sh
-# 仅安装配置文件
+# 仅安装配置文件 (root用户如需使用配置得再在root用户下再安装一次配置)
 export nvim_install="no" && wget -qO- https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-musl-wget.sh | sh
 ```
 
