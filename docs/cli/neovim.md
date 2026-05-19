@@ -5,7 +5,8 @@ permalink: /cli/u6kqsl6n/
 ---
 ## Neovim 安装
 详细文档请阅读[Github](https://github.com/jianghuaangte/Neovim)  
-Win 必须以`管理员`权限运行、关闭杀毒
+Win 必须以`管理员`权限运行、关闭杀毒  
+root 用户要加上 sudo  
 
 
 ::: code-tabs#neovim
@@ -16,7 +17,7 @@ Win 必须以`管理员`权限运行、关闭杀毒
 curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-glibc.sh | bash
 # wget 方式(可能触发反爬虫)
 wget -O - https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-glibc.sh | bash
-# 仅安装配置文件
+# 仅安装配置文件 (root用户如需使用配置得再在root用户下再安装一次配置且加上sudo)
 export nvim_install="no" && curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-glibc.sh | bash
 ```
 
@@ -28,7 +29,7 @@ export nvim_install="no" && curl -fsSL https://ghfast.top/https://raw.githubuser
 curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-musl.sh | sh
 # wget 方式(可能触发反爬虫)
 wget -qO- https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-musl-wget.sh | sh
-# 仅安装配置文件 (root用户如需使用配置得再在root用户下再安装一次配置)
+# 仅安装配置文件 (root用户如需使用配置得再在root用户下再安装一次配置且加上sudo)
 export nvim_install="no" && wget -qO- https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/Neovim/refs/heads/main/install-musl-wget.sh | sh
 ```
 
