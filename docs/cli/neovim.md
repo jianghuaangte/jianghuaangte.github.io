@@ -42,18 +42,32 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 
 :::
 
-
-## Neovim 右键编辑
+## Win Neovim 右键编辑
 - 前提使用上一节 Neovim 安装脚本(win)使用  
 - Win 必须以`管理员`权限运行、关闭杀毒
 
 ::: code-tabs#neovim
 
-@tab win
+@tab terminal
 
 ```powershell
 $env:GH_PROXY = "https://ghfast.top/"
-Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/nilesoft-shell-neovim/refs/heads/main/nilesoft-shell-neovim.ps1'))
+Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/nilesoft-shell-neovim/refs/heads/main/nilesoft-shell-terminal-neovim.ps1'))
+```
+
+
+@tab wezterm
+
+```powershell
+$env:GH_PROXY = "https://ghfast.top/"
+Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/nilesoft-shell-neovim/refs/heads/main/nilesoft-shell-wezterm-neovim.ps1'))
+```
+
+@tab cmd
+
+```powershell
+$env:GH_PROXY = "https://ghfast.top/"
+Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ghfast.top/https://raw.githubusercontent.com/jianghuaangte/nilesoft-shell-neovim/refs/heads/main/nilesoft-shell-cmd-neovim.ps1'))
 ```
 
 :::
